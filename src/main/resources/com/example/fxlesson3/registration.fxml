@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="574.0" prefWidth="370.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxlesson3.RegistrationController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="538.0" prefWidth="330.0">
+      <children>
+         <Text fill="#0bae11" layoutX="80.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Page">
+            <font>
+               <Font size="19.0" />
+            </font>
+         </Text>
+         <VBox layoutX="14.0" layoutY="35.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="305.0" prefWidth="298.0">
+            <children>
+               <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="429.0" prefWidth="298.0">
+                  <children>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+                        <font>
+                           <Font name="Ageo-Regular" size="12.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets bottom="5.0" right="5.0" top="5.0" />
+                        </VBox.margin>
+                     </Text>
+                     <TextField fx:id="fnametext" prefHeight="25.0" prefWidth="132.0">
+                        <VBox.margin>
+                           <Insets bottom="10.0" right="10.0" top="10.0" />
+                        </VBox.margin>
+                     </TextField>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="last name" wrappingWidth="98.96484375">
+                        <font>
+                           <Font name="Ageo-Regular" size="12.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets bottom="5.0" right="5.0" top="5.0" />
+                        </VBox.margin>
+                     </Text>
+                     <TextField fx:id="lnametext" prefHeight="25.0" prefWidth="141.0">
+                        <VBox.margin>
+                           <Insets bottom="10.0" right="10.0" top="10.0" />
+                        </VBox.margin>
+                     </TextField>
+                     <ComboBox fx:id="comboclass" editable="true" prefHeight="25.0" prefWidth="289.0" promptText="choose classroom" />
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+                        <font>
+                           <Font name="Ageo-Regular" size="12.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets bottom="5.0" right="5.0" top="5.0" />
+                        </VBox.margin>
+                     </Text>
+                     <TextField fx:id="pnumbertext" prefHeight="46.0" prefWidth="288.0">
+                        <VBox.margin>
+                           <Insets bottom="10.0" right="10.0" top="10.0" />
+                        </VBox.margin>
+                     </TextField>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                        <font>
+                           <Font name="Ageo-Regular" size="12.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets bottom="5.0" right="5.0" top="5.0" />
+                        </VBox.margin>
+                     </Text>
+                     <TextField fx:id="emailtext" prefHeight="25.0" prefWidth="141.0">
+                        <VBox.margin>
+                           <Insets bottom="10.0" right="10.0" top="10.0" />
+                        </VBox.margin>
+                     </TextField>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                        <font>
+                           <Font name="Ageo-Regular" size="12.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets bottom="5.0" right="5.0" top="5.0" />
+                        </VBox.margin>
+                     </Text>
+                  </children>
+               </VBox>
+            </children>
+         </VBox>
+         <Button id="registrationbutton" fx:id="registrationbutton" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="490.0" onAction="#registrationbuttonClicked" prefHeight="30.0" prefWidth="140.0" style="-fx-background-color: green;" text="Registration" />
+         <Button id="cancelbutton" fx:id="cancelbutton" alignment="CENTER" contentDisplay="CENTER" layoutX="165.0" layoutY="490.0" onAction="#cancelbuttonClicked" prefHeight="30.0" prefWidth="140.0" style="-fx-background-color: red;" text="Cancel" />
+         <PasswordField fx:id="passwordText" layoutX="16.0" layoutY="373.0" prefHeight="25.0" prefWidth="289.0" />
+         <ComboBox fx:id="combogroup" editable="true" layoutX="16.0" layoutY="420.0" prefHeight="25.0" prefWidth="289.0" promptText="choose group" />
+      </children>
+   </Pane>
+</VBox>
